@@ -58,9 +58,3 @@ char* CharSeq::asArray() {
     arr[charCount] = '\0';
     return arr;
 }
-
-sptr<CharSeq> CharSeq::getSptr(const char *of) {
-    sptr<CharSeq> ptr = sptr<CharSeq>(new CharSeq(of));
-    return ptr;
-}
-

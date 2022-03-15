@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 BmpResourceManager::BmpResourceManager() {
-    resourceDict = sptr<CharSeqKeyDictionary<SDL_Surface*>>(new CharSeqKeyDictionary<SDL_Surface*>());
+    resourceDict = new CharSeqKeyDictionary<SDL_Surface*>();
 }
 
 SDL_Surface *BmpResourceManager::getResource(sptr<CharSeq> path) {

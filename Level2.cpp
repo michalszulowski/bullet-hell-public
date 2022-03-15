@@ -10,7 +10,7 @@ Level2::Level2(sptr<Displayable> background, sptr<BmpResourceManager> resourceMa
 
 void Level2::initEnemy() {
     sptr<Displayable> sprite = new StaticSprite(resourceManager->getResource(new CharSeq("./files/enemies/red.bmp")));
-    sptr<Displayable> bulletSprite = new StaticSprite(resourceManager->getResource(CharSeq::getSptr("./files/bullets/enemybullet.bmp")));
+    sptr<Displayable> bulletSprite = new StaticSprite(resourceManager->getResource(new CharSeq("./files/bullets/enemybullet.bmp")));
     enemy = new StaticEnemy2(Coord(), sprite, bulletSprite);
     enemy->setPosition({120, 120});
 }

@@ -8,6 +8,7 @@ class Level3 : public GameLevel {
 public:
     Level3(sptr<Displayable> background, sptr<BmpResourceManager> resourceManager,
            sptr<ImageRenderer> imageRenderer);
+
 protected:
     void initEnemy();
 };

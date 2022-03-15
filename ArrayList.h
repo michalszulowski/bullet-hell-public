@@ -82,7 +82,7 @@ public:
     
     virtual sptr<List<E>> subList(int start, int end) {
         int newSize = end - start;
-        sptr<List<E>> sub = sptr<List<E>>(new ArrayList<E>(newSize));
+        sptr<List<E>> sub = new ArrayList<E>(newSize);
         for (int i = 0; i < newSize; ++i) {
             sub->append(this->get(start + i));
         }

@@ -3,15 +3,18 @@
 
 #include "ImageRenderer.h"
 #include "sptr.h"
+#include "BmpResourceManager.h"
 
 class Game {
 private:
     sptr<ImageRenderer> imageRenderer;
+    sptr<BmpResourceManager> resourceManager;
 
 public:
     void start();
 
 private:
+
     void playLevel(int index);
 };
 

@@ -6,14 +6,14 @@
 #include "sptr.h"
 #include "exceptions.h"
 
-//Inefficient, simple dictionary implementation
+//Inefficient, simple dictionary implementation. Recommended only for small number of elements.
 template<class K, class V>
 class Dictionary {
 protected:
     sptr<UnorderedList<Pair<K,V>>> pairs;
 public:
     Dictionary() {
-        pairs = sptr<UnorderedList<Pair<K,V>>>(new UnorderedList<Pair<K,V>>());
+        pairs = new UnorderedList<Pair<K,V>>();
     }
 
     ~Dictionary() {}

@@ -4,7 +4,6 @@
 #include "sdlinclude.h"
 #include "Player.h"
 #include "sptr.h"
-#include "Rect.h"
 #include "Bullet.h"
 #include "UnorderedList.h"
 #include "IntDimensions.h"

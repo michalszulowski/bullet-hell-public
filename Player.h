@@ -19,7 +19,6 @@ private:
     sptr<Displayable> movingLeftDisplayable;
     sptr<Displayable> movingUpDisplayable;
     int points = 0;
-    long lastTimeScored = 0;
 
 public:
     Player(sptr<Displayable> image, sptr<Displayable> bulletSprite);

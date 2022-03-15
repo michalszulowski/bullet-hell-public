@@ -19,7 +19,5 @@ public:
     char set(int index, char newElement);
     //returns dynamically allocated array;
     char* asArray();
-
-    static sptr<CharSeq> getSptr(const char* of);
 };
 #endif //PROJ_1_SHIPS_CHARSEQ_H
