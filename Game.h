@@ -4,18 +4,26 @@
 #include "ImageRenderer.h"
 #include "sptr.h"
 #include "BmpResourceManager.h"
+#include "GameMenu.h"
 
 class Game {
 private:
     sptr<ImageRenderer> imageRenderer;
     sptr<BmpResourceManager> resourceManager;
+    sptr<GameMenu> menu;
+    SDL_Surface* charset;
+    LevelResult lastLevelResult = G_EXIT;
+
 
 public:
+    Game();
+    ~Game();
     void start();
 
 private:
-
-    void playLevel(int index);
+    void startMainLoop();
+    sptr<CharSeq> getInfoDependingOn(LevelResult result);
+    void handleChosenLevel();
 };
 
 
